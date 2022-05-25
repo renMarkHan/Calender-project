@@ -1,0 +1,62 @@
+.menu-bar {
+    -fx-background-color: darkslategray;
+    -fx-opacity: 0.6
+}
+
+.menu-bar#addTask {
+    -fx-background-color: darkblue;
+    -fx-opacity: 0.6
+}
+
+.menu-bar#addAppointment {
+    -fx-background-color: purple;
+    -fx-opacity: 0.6
+}
+
+.menu-bar#addHoliday {
+    -fx-background-color: darkgreen;
+    -fx-opacity: 0.6
+}
+
+.menu-bar#addBirthday {
+    -fx-background-color: red;
+    -fx-opacity: 0.6
+}
+
+.menu-bar#addOther {
+    -fx-background-color: black;
+    -fx-opacity: 0.6
+}
+
+
+.menu {
+    -fx-background-color: whitesmoke;
+}
+
+.menu .label{
+    -fx-text-fill: black;
+}
+
+.menu#add .label{
+    -fx-font-weight: bold;
+}
+
+.menu-item#task .label{
+    -fx-text-fill: darkblue;
+}
+
+.menu-item#appointment .label{
+    -fx-text-fill: purple;
+}
+
+.menu-item#holiday .label{
+    -fx-text-fill: darkgreen;
+}
+
+.menu-item#birthday .label{
+    -fx-text-fill: red;
+}
+
+.menu-item#other .label{
+    -fx-text-fill: black;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="help" prefHeight="600.0" prefWidth="800.0"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.Controller.Controller">
+
+   <BorderPane prefWidth="200.0" stylesheets="@../CSS/menu.css">
+      <center>
+         <MenuBar BorderPane.alignment="CENTER">
+            <Menu id="add" mnemonicParsing="false" text="Add">
+               <MenuItem id="task" mnemonicParsing="false" onAction="#addTask" text="Task"/>
+               <MenuItem id="appointment" mnemonicParsing="false" onAction="#addAppointment" text="Appointment"/>
+               <MenuItem id="holiday" mnemonicParsing="false" onAction="#addHoliday" text="Holiday"/>
+               <MenuItem id="birthday" mnemonicParsing="false" onAction="#addBirthday" text="Birthday"/>
+               <MenuItem id="other" mnemonicParsing="false" onAction="#addOther" text="Other"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <MenuItem mnemonicParsing="false" onAction="#help" text="Help"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <MenuItem mnemonicParsing="false" onAction="#about" text="About"/>
+            </Menu>
+         </MenuBar>
+      </center>
+      <right>
+         <Button mnemonicParsing="false" onAction="#back" text="Back to Calendar" BorderPane.alignment="CENTER"/>
+      </right>
+   </BorderPane>
+
+   <Label id="title" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Help" stylesheets="@../CSS/title.css"/>
+
+   <Label id="bodytext" text="- The Ultimate To-do app will help you to remind things better." wrapText="true"
+          stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="- You can modify your events after creating them."
+          wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext"
+          text="- The deadline date is optional for all five types of events. But we recommend you to add one for each task."
+          wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="- There are five different types of events. The color they have will help you recognize them." wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="- If you created events in our app, by closing it will not lose all those data." wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="- If you would like to know further information, please contact the technical team: 123456@unb.ca " wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+</VBox>

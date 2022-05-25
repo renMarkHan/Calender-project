@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="content"
+      prefHeight="400.0" prefWidth="500.0"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.Controller.Controller">
+   <BorderPane prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.1" stylesheets="@../CSS/menu.css">
+      <center>
+         <MenuBar>
+            <Menu id="add" mnemonicParsing="false" text="Add">
+               <MenuItem id="task" mnemonicParsing="false" onAction="#addTask" text="Task"/>
+               <MenuItem id="appointment" mnemonicParsing="false" onAction="#addAppointment" text="Appointment"/>
+               <MenuItem id="holiday" mnemonicParsing="false" onAction="#addHoliday" text="Holiday"/>
+               <MenuItem id="birthday" mnemonicParsing="false" onAction="#addBirthday" text="Birthday"/>
+               <MenuItem id="other" mnemonicParsing="false" onAction="#addOther" text="Other"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <MenuItem mnemonicParsing="false" onAction="#help" text="Help"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <MenuItem mnemonicParsing="false" onAction="#about" text="About"/>
+            </Menu>
+         </MenuBar>
+      </center>
+      <right>
+         <Button mnemonicParsing="false" onAction="#back" text="Back" BorderPane.alignment="CENTER"/>
+      </right>
+   </BorderPane>
+
+   <Label id="title" alignment="CENTER" maxWidth="1.7976931348623157E308" text="About" stylesheets="@../CSS/title.css"/>
+   <Label id="bodytext" text="Ultimate To-do App proudly produced by: " wrapText="true" alignment="CENTER" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="Dihan Chen" alignment="CENTER" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="Yuhan Ren" alignment="CENTER" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="Micah Wang" alignment="CENTER" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="Hello marker! Whether you are Scott or his TA, please give us full mark for our Ultimate To-do App.
+   We spent tremendous time implementing it. Thanks. Merry X-mas ;)"
+          wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+</VBox>

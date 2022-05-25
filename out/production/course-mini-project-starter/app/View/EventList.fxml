@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="content"
+      prefHeight="500.0" prefWidth="560.0"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.Controller.EventListController">
+
+   <BorderPane prefWidth="200.0" stylesheets="@../CSS/menu.css">
+      <center>
+         <MenuBar BorderPane.alignment="CENTER">
+            <Menu id="add" mnemonicParsing="false" text="Add">
+               <MenuItem id="task" mnemonicParsing="false" onAction="#addTask" text="Task"/>
+               <MenuItem id="appointment" mnemonicParsing="false" onAction="#addAppointment" text="Appointment"/>
+               <MenuItem id="holiday" mnemonicParsing="false" onAction="#addHoliday" text="Holiday"/>
+               <MenuItem id="birthday" mnemonicParsing="false" onAction="#addBirthday" text="Birthday"/>
+               <MenuItem id="other" mnemonicParsing="false" onAction="#addOther" text="Other"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <MenuItem mnemonicParsing="false" onAction="#help" text="Help"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <MenuItem mnemonicParsing="false" onAction="#about" text="About"/>
+            </Menu>
+         </MenuBar>
+      </center>
+      <right>
+         <Button mnemonicParsing="false" onAction="#back" text="Calendar" BorderPane.alignment="CENTER"/>
+      </right>
+   </BorderPane>
+
+   <VBox prefHeight="262.0" prefWidth="560.0" spacing="10.0" VBox.vgrow="ALWAYS">
+      <padding>
+         <Insets left="20.0" right="20.0"/>
+      </padding>
+      <Label id="title" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Event List" stylesheets="@../CSS/title.css"
+             VBox.vgrow="ALWAYS"/>
+      <Label fx:id="lb_day" alignment="CENTER" maxWidth="1.7976931348623157E308" text="--"/>
+      <Label text="Reminder for today"/>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0"
+                  vbarPolicy="ALWAYS">
+         <VBox.margin>
+            <Insets/>
+         </VBox.margin>
+         <VBox fx:id="contentDay" spacing="1.0"/>
+      </ScrollPane>
+      <Label text="Deadline in three days"/>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0"
+                  vbarPolicy="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="20.0"/>
+         </VBox.margin>
+         <VBox fx:id="contentDeadline" spacing="1.0"/>
+      </ScrollPane>
+   </VBox>
+</VBox>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="content" prefHeight="400.0" prefWidth="500.0"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.Controller.Controller">
+
+   <BorderPane prefWidth="200.0" stylesheets="@../CSS/menu.css">
+      <center>
+         <MenuBar BorderPane.alignment="CENTER">
+            <Menu id="add" mnemonicParsing="false" text="Add">
+               <MenuItem id="task" mnemonicParsing="false" onAction="#addTask" text="Task"/>
+               <MenuItem id="appointment" mnemonicParsing="false" onAction="#addAppointment" text="Appointment"/>
+               <MenuItem id="holiday" mnemonicParsing="false" onAction="#addHoliday" text="Holiday"/>
+               <MenuItem id="birthday" mnemonicParsing="false" onAction="#addBirthday" text="Birthday"/>
+               <MenuItem id="other" mnemonicParsing="false" onAction="#addOther" text="Other"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <MenuItem mnemonicParsing="false" onAction="#help" text="Help"/>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <MenuItem mnemonicParsing="false" onAction="#about" text="About"/>
+            </Menu>
+         </MenuBar>
+      </center>
+      <right>
+         <Button mnemonicParsing="false" onAction="#back" text="Back" BorderPane.alignment="CENTER"/>
+      </right>
+   </BorderPane>
+
+   <Label id="title" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Help" stylesheets="@../CSS/title.css"/>
+   <Label id="bodytext" text="1.This  application can make progress on the things that are important to you." wrapText="true"
+          stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="2.You can get a clear overview of everything on your plate and never lose an important task."
+          wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext"
+          text="3.When you add a task, You can add a deadlinedate and reminder to a task to make sure you don't miss it."
+          wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="4.On main page,it show daily to-do list details." wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+   <Label id="bodytext" text="5.On search page,you can search task by deadline." wrapText="true" stylesheets="@../CSS/bodytext.css"/>
+</VBox>

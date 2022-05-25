@@ -1,0 +1,9 @@
+#bodytext {
+	-fx-font-size: 18px;
+	-fx-padding: 5 15 5 20;
+}
+
+#about {
+    -fx-background-image: url("../images/logo.jpg");
+    -fx-background-size: cover;
+}

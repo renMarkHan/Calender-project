@@ -1,0 +1,4 @@
+#splash {
+	-fx-background-image: url("../images/splash.png");
+	-fx-background-size: cover;
+}

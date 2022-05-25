@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="app.Controller.CalendarController">
+
+    <MenuBar stylesheets="@../CSS/menu.css">
+        <Menu id="add" mnemonicParsing="false" text="Add">
+            <MenuItem id="task" mnemonicParsing="false" onAction="#addTask" text="Task"/>
+            <MenuItem id="appointment" mnemonicParsing="false" onAction="#addAppointment" text="Appointment"/>
+            <MenuItem id="holiday" mnemonicParsing="false" onAction="#addHoliday" text="Holiday"/>
+            <MenuItem id="birthday" mnemonicParsing="false" onAction="#addBirthday" text="Birthday"/>
+            <MenuItem id="other" mnemonicParsing="false" onAction="#addOther" text="Other"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" onAction="#help" text="Help"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="About">
+            <MenuItem mnemonicParsing="false" onAction="#about" text="About"/>
+        </Menu>
+    </MenuBar>
+
+    <ScrollPane fx:id="content" prefWidth="200.0" VBox.vgrow="SOMETIMES"/>
+
+    <BorderPane prefHeight="100"
+            style="-fx-text-fill: lightcyan; -fx-font-weight: bold; -fx-background-color: whitesmoke;">
+        <left>
+            <Button mnemonicParsing="false" onAction="#previous" text="Previous Month">
+                <BorderPane.margin>
+                    <Insets bottom="400.0"/>
+                    <Insets left="250.0"/>
+                </BorderPane.margin>
+            </Button>
+        </left>
+        <right>
+          <Button mnemonicParsing="false" onAction="#next" text="Next Month">
+              <BorderPane.margin>
+                  <Insets bottom="400.0"/>
+                  <Insets right="250.0"/>
+              </BorderPane.margin>
+          </Button>
+        </right>
+    </BorderPane>
+</VBox>

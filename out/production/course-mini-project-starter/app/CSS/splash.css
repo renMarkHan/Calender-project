@@ -1,0 +1,57 @@
+.root {
+	-fx-background-image: url("../images/bg.png");
+	-fx-background-size: cover;
+	-fx-text-fill: #000000;
+	-fx-font-family: "KaiTi";
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+#splash {
+	-fx-background-image: url("../images/splash.png");
+	-fx-background-size: cover;
+}
+
+ScrollPane {
+	-fx-background-color: #fff;
+	-fx-border-color:#778899;
+}
+
+
+TextField {
+	-fx-background-color: rgba(0, 0, 0, 0.1);
+	-fx-border-color:#778899;
+	-fx-text-fill: white;
+	-fx-font-weight: bold
+}
+
+ChoiceBox {
+	-fx-background-color: rgba(30, 144, 255, 0.4);
+	-fx-border-color: #778899;
+	-fx-text-fill: white;
+}
+
+#title {
+	-fx-padding: 5 0 0 0;
+	-fx-font-size: 32px;
+	-fx-fill: #818181;
+}
+#p {
+	-fx-font-size: 14px;
+	-fx-padding: 5 15 5 20;
+}
+
+Button {
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-background-color: linear-gradient(#4682B4,#6495ED);
+}
+Button#delete {
+	-fx-text-fill: red;
+	-fx-font-weight: bold;
+	-fx-background-color: #fff;
+	
+}
+
+Button:hover {
+	-fx-background-color: linear-gradient(#1E90FF, #4169E1);
+}
